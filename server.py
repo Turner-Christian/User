@@ -29,22 +29,11 @@ class User:
         self.gold_card_points -= amount 
 
 user_christian = User('Christian', 'Turner', 'christ@gmail.com', 21)
-user_christian.enroll()
-user_christian.spend_points(50)
+user_christian.enroll().spend_points(50).display_info().enroll()
+
 
 user_catherine = User('Cat', 'Murphy', 'catm@gmail.com', 21)
-user_catherine.enroll()
-user_catherine.spend_points(80)
+user_catherine.enroll().spend_points(80).display_info()
 
 user_daniel = User('Daniel', 'Vintrov', 'daniel@gmail.com', 21)
-
-user_christian.display_info()
-user_catherine.display_info()
-user_daniel.display_info()
-
-user_christian.enroll()
-
-user_daniel.spend_points(40)
-
-
-
+user_daniel.display_info().spend_points(40)
